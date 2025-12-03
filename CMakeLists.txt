@@ -39,3 +39,11 @@ qt_add_qml_module(demo
         "QML/assets/torizon-logo.png"
         "QML/assets/model.glb"
 )
+
+# Copy model.glb to bin folder for runtime loading
+add_custom_command(TARGET demo POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        ${CMAKE_SOURCE_DIR}/QML/assets/model.glb
+        $<TARGET_FILE_DIR:demo>/model.glb
+    COMMENT "Copying model.glb to output directory"
+)
