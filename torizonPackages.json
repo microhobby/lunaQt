@@ -1,0 +1,19 @@
+{
+    "buildDeps": [
+        "qt6-base-dev",
+        "qt6-3d-dev",
+        "qt6-quick3d-dev",
+        "qt6-quicktimeline-dev",
+        "qt6-shadertools-dev"
+    ],
+    "prodRuntimeDeps": [],
+    "devRuntimeDeps": [
+        "qt6-quick3d-dev",
+        "qml6-module-qt3d-core",
+        "qml6-module-qt3d-render",
+        "qml6-module-qt3d-input",
+        "qml6-module-qt3d-logic",
+        "qml6-module-quick3d-assetutils",
+        "qml6-module-qtquick-timeline"
+    ]
+}
